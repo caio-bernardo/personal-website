@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block main %}
+
+<section>
+    <h1>Tag: {{ term.name }}</h1>
+</section>
+<hr />
+
+<section>
+    {% for page in term.pages %}
+    <article class="unstyled">
+        <hgroup>
+            <h2><a href="{{ page.permalink }}">{{ page.title | title }}</a></h2>
+            <span>{{ page.date }}</span>
+        </hgroup>
+    </article>
+    {% endfor %} {% endblock main %}
+</section>

@@ -1,0 +1,21 @@
+<header class="container" style="text-align: center">
+    {% set image = resize_image(path="static/wave.png", width=130, height=130,
+    op="scale", format="webp") %}
+    <figure>
+        <img src="{{image.url}}" alt="Kanagawa Great Wave Logo" />
+    </figure>
+
+    <hgroup>
+        <h3>Caio Bernardo</h3>
+        <p>Student | Researcher | Developer</p>
+    </hgroup>
+
+    <nav style="display: flex; justify-content: center">
+        <ul>
+            <li><a href="/">/home</a></li>
+            <li><a href="/blog">/blog</a></li>
+            <li><a href="/links">/links</a></li>
+            <li><a href="/about">/about</a></li>
+        </ul>
+    </nav>
+</header>

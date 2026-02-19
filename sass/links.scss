@@ -1,0 +1,23 @@
+.icon-card {
+    a {
+        display: flex;
+        span svg {
+            width: 32px;
+            height: 32px;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            width: 100%;
+        }
+    }
+}
+
+.icon {
+    svg {
+        width: 2rem;
+        height: 2rem;
+    }
+}

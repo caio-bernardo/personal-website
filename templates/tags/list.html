@@ -1,0 +1,15 @@
+{% extends "base.html" %} {% block main %}
+<h1>Tags</h1>
+<hr />
+
+<section>
+    <ul>
+        {% for term in terms %}
+        <li style="list-style-type: none">
+            <a href="{{ term.permalink }}">#{{ term.name }}</a>
+            ({{ term.pages | length }})
+        </li>
+        {% endfor %}
+    </ul>
+</section>
+{% endblock main %}

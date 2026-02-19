@@ -1,0 +1,32 @@
+{% import 'macros/icons.html' as icons -%}
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="color-scheme" content="light dark" />
+
+        {% if section.title %}
+        <title>{{ section.title }} | Caio Bernardo's Website</title>
+        {% else %}
+        <title>Caio Bernardo's Website</title>
+        {% endif %}
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+        />
+        <link rel="stylesheet" href="/global.css" />
+        {% if page.extra.styles %}
+        <link rel="stylesheet" href="{{ page.extra.styles }}.css" />
+        {% endif %}
+
+        <link rel="icon" type="image/x-icon" href="/wave.ico" />
+    </head>
+    <body>
+        {%- include 'partials/header.html' %}
+        <main class="container too-large-padding">
+            {% block main %} {% endblock main %}
+        </main>
+        {%- include 'partials/footer.html' %}
+    </body>
+</html>

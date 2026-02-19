@@ -1,0 +1,23 @@
+{% extends 'base.html' %} {% block main %}
+
+<header>
+    <h1>{{page.title}}</h1>
+    <small>
+        Published: <time datetime="{{page.date}}">{{page.date}}</time><br/>
+        Tags:
+        {% if page.taxonomies.tags %}
+            {% for tag in page.taxonomies.tags %}
+            <span><a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">#{{ tag }}</a></span>
+            {% endfor %}
+        {% endif %}<br/>
+        Read Time: <em>{{page.reading_time}} minute</em>
+    </small>
+</header>
+
+<hr/>
+
+<article class="unstyled">
+    {{page.content | safe}}
+</article>
+
+{% endblock main %}

@@ -32,7 +32,7 @@ This my personal website, built with Zola, containing information about me, usef
 - [x] Dark/Light Mode
 - [x] Proper metadata and good SEO
 - [x] RSS/Atom feed
-- [ ] Write the First Post
+- [x] Write the First Post
 - [ ] Newsletter Service
 <!-- ## EXtra Sections -->
 

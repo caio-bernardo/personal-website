@@ -2,11 +2,10 @@
 base_url = "https://caiobernardo.top"
 
 title = "Caio's Website"
+author = "Caio Bernardo"
 description = "Caio Bernardo's personal website and blog. See information about me or read some posts."
 
 default_language = "en"
-
-author = "Caio Bernardo"
 
 generate_feeds = true
 # Whether to build a search index to be used later on by a JavaScript library
@@ -21,9 +20,10 @@ taxonomies = [
 [markdown]
 render_emoji = true
 github_alerts = true
+bottom_footnotes = true
 
 [markdown.highlighting]
-theme = "catppuccin-mocha"
+theme = "kanagawa-wave"
 
 [search]
 index_format = "elasticlunr_json"

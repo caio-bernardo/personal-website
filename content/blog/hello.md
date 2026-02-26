@@ -27,7 +27,7 @@ I decided to use [Zola](https://www.getzola.org/) in combination with [Pico CSS]
 
 To be honest, I don't expect to make a post very often, my ideal goal would be a post every month, but with college and other obligations I don't know if its gonna work. Anyway, I'll try to be consistent.
 
-About subjects, I will write about what I like. You can also send me suggestions, by [email](mailto:me@caiobernardo.top).
+About subjects, I will write about what I like, this includes software development, anime, games and more. You can also send me suggestions, by [email](mailto:me@caiobernardo.top).
 
 ## Conclusion
 

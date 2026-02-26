@@ -1,3 +1,28 @@
+@use "scss/pico" with (
+    $theme-color: "amber",
+    $enable-semantic-container: true,
+    $enable-classes: true,
+    $modules: (
+        "content/code": false,
+        "forms/input-color": false,
+        "forms/input-date": false,
+        "forms/input-file": false,
+        "forms/input-range": false,
+        "forms/input-search": false,
+        "components/accordion": false,
+        "components/dropdown": false,
+        "components/loading": false,
+        "components/modal": false,
+        "components/progress": false,
+        "components/tooltip": false,
+        "utilities/accessibility": false,
+        "utilities/reduce-motion": false,
+    )
+);
+
+@use "links";
+@use "nav";
+
 body {
     font-family: Ubuntu, "times new roman", times, roman, serif;
 }
@@ -18,9 +43,13 @@ body {
     }
 }
 
+#photo-card {
+    display: flex;
+}
+
 @media (min-width: 1024px) {
     .too-large-padding {
-        padding-left: 12rem;
-        padding-right: 12rem;
+        padding-left: 21vw;
+        padding-right: 21vw;
     }
 }

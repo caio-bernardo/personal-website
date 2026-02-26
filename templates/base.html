@@ -2,25 +2,46 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <base href="{{config.base_url | safe}}" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="color-scheme" content="light dark" />
+        <meta name="author" content="{{config.author}}" />
+        <meta name="description" content="{{config.description}}" />
+        <link rel="me" href="https://github.com/caio-bernardo/" />
+        <link rel="me" href="https://mastodon.social/@caio_v1" />
+        <title>
+            {% if section.title -%} {{ section.title }} | {% elif page.title -%}
+            {{ page.title }} | {% endif %} {{config.title}}
+        </title>
 
-        {% if section.title %}
-        <title>{{ section.title }} | Caio Bernardo's Website</title>
-        {% else %}
-        <title>Caio Bernardo's Website</title>
-        {% endif %}
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
-        />
         <link rel="stylesheet" href="/global.css" />
-        {% if page.extra.styles %}
-        <link rel="stylesheet" href="{{ page.extra.styles }}.css" />
-        {% endif %}
-
-        <link rel="icon" type="image/x-icon" href="/wave.ico" />
+        <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon/favicon-16x16.png"
+        />
+        <script>
+            const theme =
+                localStorage.getItem("theme") ||
+                (window.matchMedia("(prefers-color-scheme: light)").matches
+                    ? "light"
+                    : "dark");
+            document.documentElement.setAttribute("data-theme", theme);
+        </script>
     </head>
     <body>
         {%- include 'partials/header.html' %}
@@ -29,4 +50,5 @@
         </main>
         {%- include 'partials/footer.html' %}
     </body>
+    <script src="/js/theme-toggler.js"></script>
 </html>

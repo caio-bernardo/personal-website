@@ -29,12 +29,11 @@ This my personal website, built with Zola, containing information about me, usef
 - [x] Links Page
 - [x] Blogs Section
 - [x] Templates to create Blog posts
-- [ ] Create Kanagawa Theme
-- [ ] RSS/Atom feed
-- [ ] Proper metadata and good SEO
-- [ ] Fediverse Comments
-- [ ] Make the landing page with only 14Kb
-
+- [x] Dark/Light Mode
+- [x] Proper metadata and good SEO
+- [x] RSS/Atom feed
+- [ ] Write the First Post
+- [ ] Newsletter Service
 <!-- ## EXtra Sections -->
 
 <!-- ## API -->
@@ -47,7 +46,8 @@ This my personal website, built with Zola, containing information about me, usef
  
  - [Gabriel Monteiro's Website](https://gabrielsouza.top/)
  - [Marcus Obst's Website](https://marcus-obst.de/)
- - Kanagawa Theme
+ - Built with [Zola](https://getzola.org)
+ - Built with [Pico CSS](https://picocss.com)
 
 ## Contributing
 
@@ -59,6 +59,6 @@ Don't forget to check our [Code of Conduct](CODE_OF_CONDUCT.md) for the reposito
 
 ## License
 
-This project is under the MIT license. For more info see [LICENSE](LICENSE).
+This project is under the MIT license, for more info see [LICENSE](LICENSE). Also, all the blog posts are under the Creative Commons License, see [CC-BY-SA-4.0](static/LICENSE-CC-BY-SA-4) for more.
 
 This file was made with [Make Your Reads](https://github.com/caio-bernardo/make-your-reads).

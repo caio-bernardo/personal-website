@@ -1,11 +1,12 @@
 {% extends 'base.html' %} {% block main %}
 
-<hgroup>
-{{section.content | safe}}
-</hgroup>
+<section class="search-container">
+    <hgroup>
+    {{section.content | safe}}
+    </hgroup>
+</section>
 
 <hr />
-
 <section>
     {% for page in section.pages %}
     <article class="unstyled">

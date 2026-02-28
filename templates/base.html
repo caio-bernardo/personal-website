@@ -2,12 +2,30 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <base href="{{config.base_url | safe}}" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="color-scheme" content="light dark" />
         <meta name="author" content="{{config.author}}" />
         <meta name="description" content="{{config.description}}" />
+
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:title"
+            content="{{ page.title | default(value=config.title) | safe }}"
+        />
+        <meta
+            property="og:description"
+            content="{{ page.description | default(value=config.description) }}"
+        />
+        <meta
+            property="og:image"
+            content="{{ get_url(path="images/Tsunami_by_hokusai_19th_century.jpg") | safe }}"
+        />
+        <meta property="og:image:alt" content="Website logo" />
+        <meta property="og:site_name" content="{{ config.title }}" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="article:author" content="{{ config.author }}" />
+        <meta name="fediverse:creator" content="@caio_v1@mastodon.social" />
         <link rel="me" href="https://github.com/caio-bernardo/" />
         <link rel="me" href="https://mastodon.social/@caio_v1" />
         <title>
@@ -16,23 +34,30 @@
         </title>
 
         <link rel="stylesheet" href="/global.css" />
+
+        {% set apple_icon = resize_image(path="/favicon/apple-touch-icon.png", width=180, height=180,
+         op="fit", format="avif") %}
         <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico" />
         <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="/favicon/apple-touch-icon.png"
+            href="{{apple_icon.url}}"
         />
+        {% set favicon = resize_image(path="/favicon/favicon-32x32.png", width=32, height=32,
+        op="fit", format="avif") %}
         <link
             rel="icon"
-            type="image/png"
+            type="image/avif"
             sizes="32x32"
-            href="/favicon/favicon-32x32.png"
+            href="{{favicon.url}}"
         />
+        {% set favicon16 = resize_image(path="/favicon/favicon-16x16.png", width=16, height=16,
+        op="fit", format="avif") %}
         <link
             rel="icon"
-            type="image/png"
+            type="image/avif"
             sizes="16x16"
-            href="/favicon/favicon-16x16.png"
+            href="{{favicon16.url}}"
         />
         <script>
             const theme =

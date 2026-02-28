@@ -25,8 +25,5 @@ bottom_footnotes = true
 [markdown.highlighting]
 theme = "kanagawa-wave"
 
-[search]
-index_format = "elasticlunr_json"
-
 [extra]
 # Put all your custom variables here

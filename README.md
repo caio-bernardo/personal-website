@@ -33,6 +33,8 @@ This my personal website, built with Zola, containing information about me, usef
 - [x] Proper metadata and good SEO
 - [x] RSS/Atom feed
 - [x] Write the First Post
+- [x] Make image for link sharing
+- [ ] Write 2dn post
 - [ ] Newsletter Service
 <!-- ## EXtra Sections -->
 
@@ -42,7 +44,7 @@ This my personal website, built with Zola, containing information about me, usef
 
  ## Acknowledgements 
  
- This project has been inspired by
+ This project has been inspired by:
  
  - [Gabriel Monteiro's Website](https://gabrielsouza.top/)
  - [Marcus Obst's Website](https://marcus-obst.de/)

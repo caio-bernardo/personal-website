@@ -3,7 +3,7 @@ title = "About"
 +++
 
 <article class="grid" id="photo-card">
-{{ resize_img(path="/image.jpg", width=236, height=236, op="fit", alt="Caio Bernardo Photo", class="about-img") }}
+{{ resize_img(path="/images/profile.jpg", width=236, height=236, op="fit", alt="Caio Bernardo Photo", class="about-img") }}
 
 <address>
 <a href="https://caiobernardo.top">Caio Vinicius C. Bernardo.</a><br/>
@@ -14,8 +14,8 @@ São Paulo, Brazil.<br/>
 </article>
 
 Below you can find my _resume_ in portuguese and english, both signed and verified.
-- [Currículo em Português](/resumes/Curriculum-Vitae.pt-br.pdf)
-- [Resume in English](/resumes/Curriculum-Vitae.pdf)
+- [Currículo em Português](/resumes/Curriculum-Vitae.pt-br_assinado.pdf)
+- [Resume in English](/resumes/Curriculum-Vitae_signed.pdf)
 
 As you might have notice my name is _Caio Bernardo_, some friends call me _Orimoto_. I'm brazillian, studying Information Systems in the University of São Paulo. I started programming as a hobby during the Covid Pandemic, but it grew into a passion.
 

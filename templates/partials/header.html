@@ -1,6 +1,6 @@
 <header class="container" style="text-align: center">
-    {% set image = resize_image(path="static/wave.png", width=130, height=130,
-    op="scale", format="webp") %}
+    {% set image = resize_image(path="/images/wave.png", width=130, height=130,
+    op="fit", format="avif") %}
     <figure>
         <img src="{{image.url}}" alt="Kanagawa Great Wave Logo" />
     </figure>

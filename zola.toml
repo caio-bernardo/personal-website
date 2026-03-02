@@ -7,6 +7,8 @@ description = "Caio Bernardo's personal website and blog. See information about 
 
 default_language = "en"
 
+minify_html = true
+
 generate_feeds = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
@@ -27,3 +29,4 @@ theme = "kanagawa-wave"
 
 [extra]
 # Put all your custom variables here
+license = "CC BY-SA 4.0 License"

@@ -3,23 +3,12 @@
 # Personal Website
 
 <!-- INSERT BANNER HERE -->
+![Great Wave of Kanagawa](static/images/Tsunami_by_hokusai_19th_century.jpg)
 
 <!-- INSERT BADGES HERE -->
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-<!-- INSERT SHORT DESCRIPTION HERE -->
 This my personal website, built with Zola, containing information about me, useful links, my resume and some blog posts. 
-
-<!-- LONG DESCRIPTION HERE -->
-
-<!-- ## Table of Contents -->
-
-<!-- ## Security -->
-<!-- ## Background -->
-
-<!-- ### Dependencies -->
-
-<!-- ### CLI/Others -->
 
 ## Roadmap
 
@@ -34,17 +23,11 @@ This my personal website, built with Zola, containing information about me, usef
 - [x] RSS/Atom feed
 - [x] Write the First Post
 - [x] Make image for link sharing
-- [ ] Write 2dn post
-- [ ] Newsletter Service
-<!-- ## EXtra Sections -->
-
-<!-- ## API -->
-
-<!-- ## Maintainers -->
+- [x] Implement webmentions
+- [ ] Make a portuguese version
+- [ ] Fix font problems in mobile
 
  ## Acknowledgements 
- 
- This project has been inspired by:
  
  - [Gabriel Monteiro's Website](https://gabrielsouza.top/)
  - [Marcus Obst's Website](https://marcus-obst.de/)
@@ -56,8 +39,6 @@ This my personal website, built with Zola, containing information about me, usef
 Feel free to [Open a New Issue](/issues/new) or [Submit a Pull Request](/compare).
 See our [CONTRIBUTING](CONTRIBUTING.md) file for more information in how to contribute in more specific ways. 
 Don't forget to check our [Code of Conduct](CODE_OF_CONDUCT.md) for the repository guidelines.
-
-<!-- ### Contributors -->
 
 ## License
 

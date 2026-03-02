@@ -40,6 +40,6 @@ About subjects, I'll write about what I like, this includes software development
 
 ## Conclusion
 
-Feel welcomed, read some posts, subscribe through the [feed]({{ get_url('/atom.xml') }}) if you want, and thank you for taking your time to read something from me :smile:.
+Feel welcomed, read some posts, subscribe through the [feed](/atom.xml) if you want, and thank you for taking your time to read something from me :smile:.
 
 [^1]: [https://indieweb.org/](https://indieweb.org/)

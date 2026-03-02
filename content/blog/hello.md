@@ -1,7 +1,7 @@
 +++
 title = "First Post / Why does this blog exist?"
 date = "2025-02-19"
-updated = "2025-02-28"
+updated = "2025-03-02"
 slug = "first-post"
 
 template = "blog_post.html"
@@ -10,7 +10,11 @@ template = "blog_post.html"
 tags = ["hello-world"]
 +++
 
-As the title says this is my first post, so uhhmm... Hello, how are you?... However, this also the post that explains the reason this blog even exists. The answer for this question is pretty simple, I've always wanted a personal website. First because I'm defender (at least I try) of an indie, descentralized and communal internet[^1], thus I created a digital garden of my own, where I can centralize everything about me and share in other plataforms. The second reason is that I often read and write about things and I thought a blog could help direct this productivity energy toward something useful for society (or maybe just entertain one or two people).
+# First Post or why does this blog exist?
+
+As the title says this is my first post, so uhhmm... Hello, how are you?... However, this also the post that explains the reason this blog even exists. The answer for this question is pretty simple, I've always wanted a personal website. First because I was inspired by the concept of an indie, descentralized and communal internet[^1], thus I created a digital garden of my own, where I can centralize everything about me and share in other plataforms. The second reason is that I often read and write about things and I thought a blog could help direct this productivity energy toward something useful for society (or maybe just entertain one or two people).
+
+<!-- more -->
 
 ## Why the Kanagawa Wave in the navbar?
 
@@ -24,6 +28,10 @@ Also the image you see on the navbar is from [jakeLoris](https://pixabay.com/use
 
 I decided to use [Zola](https://www.getzola.org/) in combination with [Pico CSS](https://picocss.com/), because I hate to write CSS and like how Pico's defaults look. I actually manually downloaded the library and adapted it to Zola, since its been broken since v2.1 because of the [grass](https://github.com/connorskees/grass) crate (Yes, it's a rabbit hole).
 
+### My inspirations
+
+To say I thought about all the features in this website would be a lie (and very bad one). I took inspirations mainly from a friend from university, [Gabriel Souza](https://gabrielsouza.top/) and a german blogger, [Marcus Obst](https://marcus-obst.de/). I tried to give my own face to this blog and I think it still needs improvements, but it's ok.
+
 ## What you're going to see if a subscribe to you?
 
 To be honest, I don't expect to make a post very often, my ideal goal would be a post every month, but with college and other obligations I don't know if it going to work. Anyway, I'll try to be consistent.
@@ -32,6 +40,6 @@ About subjects, I'll write about what I like, this includes software development
 
 ## Conclusion
 
-Feel welcomed, read some posts, subscribe through the _feed_ if you want, and thank you for taking your time to read something from me :smile:.
+Feel welcomed, read some posts, subscribe through the [feed]({{ get_url('/atom.xml') }}) if you want, and thank you for taking your time to read something from me :smile:.
 
 [^1]: [https://indieweb.org/](https://indieweb.org/)

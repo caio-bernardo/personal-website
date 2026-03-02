@@ -19,6 +19,18 @@ taxonomies = [
     {name = "tags", feed=true}
 ]
 
+
+[languages.pt-br]
+generate_feeds = true
+
+taxonomies = [
+    {name = "tags", feed=true}
+]
+
+[languages.pt-br.translations]
+title = "Website do Caio Bernardo"
+description = "Website pessoal e blog de Caio Bernardo. Veja informações sobre mim e algumas postagens."
+
 [markdown]
 render_emoji = true
 github_alerts = true

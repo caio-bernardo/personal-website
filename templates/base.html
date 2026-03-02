@@ -1,6 +1,6 @@
 {% import 'macros/icons.html' as icons -%}
 <!doctype html>
-<html lang="en">
+<html lang="{{lang | default(value=config.default_language)}}">
     {%- include 'partials/head.html' %}
     <body>
         {%- include 'partials/header.html' %}

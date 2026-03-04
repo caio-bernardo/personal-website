@@ -1,5 +1,5 @@
 @use "scss/pico" with (
-    $theme-color: "amber",
+    $theme-color: "blue",
     $enable-semantic-container: true,
     $enable-classes: true,
     $modules: (
@@ -24,10 +24,6 @@
 
 @use "links";
 @use "nav";
-
-* {
-    font-family: Ubuntu, "times new roman", times, roman, serif;
-}
 
 .center {
     display: flex;

@@ -17,13 +17,14 @@
         "components/nav": true,
         "components/progress": false,
         "components/tooltip": false,
-        "utilities/accessibility": false,
-        "utilities/reduce-motion": false,
+        "utilities/accessibility": true,
+        "utilities/reduce-motion": true,
     )
 );
 
 @use "links";
 @use "nav";
+@use "comment_section";
 
 .center {
     display: flex;

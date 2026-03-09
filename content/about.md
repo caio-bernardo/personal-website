@@ -9,15 +9,15 @@ title = "About"
 <address>
     <a class="p-name" rel="me" href="https://caiobernardo.top">
         Caio Vinicius C. Bernardo.</a><br />
-    Information Systems at University of São Paulo.<br />
+    Information Systems at <span class="p-org">University of São Paulo</span>.<br />
     <a class="u-email" href="mailto:me@caiobernardo.top" >
         me@caiobernardo.top
     </a>.<br />
+    <a class="u-key" href="/pgp/caio-bernardo-pubkey.asc">PGP Public Key</a><br/>
     São Paulo, Brazil.<br />
 </address>
 
 </article>
-
 
 Below you can find my _resume_ in portuguese and english, both signed and verified.
 - [Currículo em Português](/resumes/Curriculum-Vitae.pt-br_assinado.pdf)

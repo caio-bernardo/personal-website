@@ -3,7 +3,7 @@
     $enable-semantic-container: true,
     $enable-classes: true,
     $modules: (
-        "content/code": false,
+        "content/code": true,
         "forms/input-color": false,
         "forms/input-date": false,
         "forms/input-file": false,
@@ -17,13 +17,14 @@
         "components/nav": true,
         "components/progress": false,
         "components/tooltip": false,
-        "utilities/accessibility": false,
-        "utilities/reduce-motion": false,
+        "utilities/accessibility": true,
+        "utilities/reduce-motion": true,
     )
 );
 
 @use "links";
 @use "nav";
+@use "comment_section";
 
 .center {
     display: flex;

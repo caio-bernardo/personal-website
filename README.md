@@ -8,7 +8,7 @@
 <!-- INSERT BADGES HERE -->
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-This my personal website, built with Zola, containing information about me, useful links, my resume and some blog posts. 
+This my personal website, built with Zola, containing information about me, useful links, my resume and some blog posts. Includes a Fediverse linked comment section!
 
 ## Roadmap
 
@@ -24,8 +24,9 @@ This my personal website, built with Zola, containing information about me, usef
 - [x] Write the First Post
 - [x] Make image for link sharing
 - [x] Implement webmentions
+- [x] Fix font problems in mobile
+- [x] Mastodon Comments
 - [ ] Make a portuguese version
-- [ ] Fix font problems in mobile
 
  ## Acknowledgements 
  
@@ -36,12 +37,10 @@ This my personal website, built with Zola, containing information about me, usef
 
 ## Contributing
 
-Feel free to [Open a New Issue](/issues/new) or [Submit a Pull Request](/compare).
-See our [CONTRIBUTING](CONTRIBUTING.md) file for more information in how to contribute in more specific ways. 
-Don't forget to check our [Code of Conduct](CODE_OF_CONDUCT.md) for the repository guidelines.
+If you find any problem with this project or has a suggestion, feel free to [Open a New Issue](/issues/new) or [Submit a Pull Request](/compare).
 
 ## License
 
-This project is under the MIT license, for more info see [LICENSE](LICENSE). Also, all the blog posts are under the Creative Commons License, see [CC-BY-SA-4.0](static/LICENSE-CC-BY-SA-4) for more.
+The source code is under the MIT license, for more info see [LICENSE](LICENSE). All the content is under the Creative Commons License, see [CC-BY-SA-4.0](static/LICENSE-CC-BY-SA-4) for more.
 
 This file was made with [Make Your Reads](https://github.com/caio-bernardo/make-your-reads).

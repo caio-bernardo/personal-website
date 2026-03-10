@@ -25,8 +25,8 @@ This my personal website, built with Zola, containing information about me, usef
 - [x] Make image for link sharing
 - [x] Implement webmentions
 - [x] Fix font problems in mobile
+- [x] Mastodon Comments
 - [ ] Make a portuguese version
-- [ ] Mastodon Comments
 
  ## Acknowledgements 
  

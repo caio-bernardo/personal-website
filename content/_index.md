@@ -5,7 +5,7 @@
 
 <article>
     My name is Caio Bernardo. This is my spot on the internet,
-    here I intend to share my contact info, showcase some projects and sometimes
+    here I intend to share my personal information, showcase some projects and sometimes
     a post I found the courage to publish.
 </article>
 

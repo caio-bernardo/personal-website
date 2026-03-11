@@ -1,3 +1,4 @@
+{% import 'macros/comments.html' as comments -%}
 {% extends 'base.html' %} {% block main %}
 
 <header>
@@ -22,5 +23,11 @@
 <article class="unstyled h-entry">
     {{page.content | safe}}
 </article>
+
+{% if page.extra.fediverse_post -%}
+{% set post = page.extra.fediverse_post %}
+<hr/>
+{{ comments::load(host=post.host, username=post.username, id=post.id) }}
+{% endif %}
 
 {% endblock main %}

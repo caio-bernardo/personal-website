@@ -4,10 +4,16 @@ date = "2026-02-19"
 updated = "2026-03-09"
 slug = "first-post"
 
+summary = "As the title says, this is my first post, so _ugh_... Hello, how are you?... In addition, this is also the post that explains the reason this blog even exists."
+
 template = "blog_post.html"
+
 
 [taxonomies]
 tags = ["hello-world"]
+
+[extra]
+fediverse_post = { host = "mastodon.social", username="caio_v1", id = "116210864113910065" }
 +++
 
 # First Post or why does this blog exist?
@@ -15,8 +21,6 @@ tags = ["hello-world"]
 **Update 2026-03-09**: Added Mastodon comments. Explained Cloudflare hosting. Fixed lots of typos and mistakes.
 
 As the title says, this is my first post, so _ugh_... Hello, how are you?... In addition, this is also the post that explains the reason this blog even exists. The answer to this question is pretty simple: I've always wanted a personal website. First, because I was inspired by the concept of an indie, decentralized and communal web[^1], thus I created a digital garden of my own, where I can centralize everything about me and share on other platforms. The second reason is that I often read and write about things, and I thought a blog could help me direct this productivity energy toward something useful for society (or maybe just entertain one or two people).
-
-<!-- more -->
 
 ## Why the Kanagawa Wave in the navbar?
 

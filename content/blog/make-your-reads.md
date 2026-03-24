@@ -11,7 +11,7 @@ tags = ["projects", "cli", "project-documentation"]
 
 # Make your Reads: A CLI for making your Project Documentation
 
-Have you ever encounter one of those famous/professional Open Source projects and seen a dozen of `.txt` or `.md` files named like `CODE_OF_CONDUCT`, `CONTRIBUTING`, `CHANGELOG`, etc? Have you ever stopped to read them or think about what each file means? If you answered yes or I simply got your attention, in this article I will explain what each file means and showcase a project to help you if creating these files.
+Have you ever encounter one of those famous/professional Open Source projects and seen a dozen of `.txt` or `.md` files named like `CODE_OF_CONDUCT`, `CONTRIBUTING`, `CHANGELOG`, etc? Have you ever stopped to read them or think about what each file means? If you answered yes or I simply got your attention, then rejoice! In this article I will explain what each file means and showcase a project to help you creating these files.
 
 ## A quick glossary
 
@@ -25,11 +25,13 @@ They can be called _"Repository Metadata"_, "Project Documentation", Github call
 1. `LICENSE`: its a file that carries some legal (kinda) statements, you tell what people can do with your project, can they profit over it? Do they need to follow some rules? Your license defines all that.
 1. Others: there can be many more like `USAGE.md`, `FUNDING.md` and `ROADMAP.md`. You decide how your project is structured.
 
+Presentations made, let's see a tool to ease the process of managing this files.
+
 ## Make your Reads
 
-It's a CLI tool built with Rust that comes with a preset of curated templates for you to use.
+It's a CLI tool built with Rust that comes with a preset of **curated templates of project metadata** for you to use!
 
-The project is actually a revival of an older project I made to generate _README_ files a long time ago. Instead of facing my problems directely I decided to rebuild the project from scratch. And I have not regret it yet! This version is more mature and refined than the previous. You can find the source code at [github](https://github.com/caio-bernardo/make-your-reads) and it's also  available at [crates.io](https://crates.io/crates/make-your-reads).
+This project is actually a revival of an older one, made to generate _README_ files a long time ago. Instead of facing my problems directely I decided to rebuild the project from scratch. And I have not regret it yet! This version is more mature and refined than the previous. You can find the source code at [github](https://github.com/caio-bernardo/make-your-reads) and it's also  available at [crates.io](https://crates.io/crates/make-your-reads).
 
 ### Usage
 
@@ -120,7 +122,12 @@ Each space meant for you to complete has been marked with a comment, including s
 
 ## Sources for the Templates
 
-<!--TODO-->
+Almost all templates were gather from different places. I tried to get the more populars or the ones I liked the most, here goes a list of sources:
+
+- READMEs from [README Standard](https://github.com/RichardLitt/standard-readme)
+- Changelog from [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
+- Contribution and Code of Conduct from [Contributor Covenant](https://www.contributor-covenant.org/)
+- Licenses from there sources, but the options came from [Choose a License](https://choosealicense.com/).
 
 ## Similar tools
 
@@ -138,6 +145,8 @@ _Yeah_, my tool cannot compete with a *LLM*, I admit that. However, question you
 
 ## Conclusion
 
-Organizing and developing a good documentation is essential for Open Source Projects, they can show the maturity of a project and help the developers to situate in your environment, so even if you don't use this tool, please, <mark>make your reads</mark>. Moreover, if you liked this project, give it a try or just a [star](https://github.com/caio-bernardo/make-your-reads) :star:. See you next time.
+Organizing and developing a good documentation is essential for Open Source Projects, they can show the maturity of a project and help the developers to situate in your environment, so even if you don't use this tool, please, <mark>make your reads</mark>. 
+
+Moreover, if you liked this project, give it a try or just a [star](https://github.com/caio-bernardo/make-your-reads) :star:. See you next time.
 
 [^1]: [Community Health Files - Github Docs](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file)

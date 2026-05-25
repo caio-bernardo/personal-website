@@ -5,6 +5,17 @@
         <img src="{{image.url}}" alt="Kanagawa Great Wave Logo" />
     </figure>
 
+    <div class="sider">
+        <button class="outline contrast" id="theme-toggler">
+            <span id="theme-moon" aria-label="Toggle Dark Mode">
+                {{icons::icon(name="moon")}}
+            </span>
+            <span id="theme-sun" aria-label="Toggle Light Mode">
+                {{icons::icon(name="sun")}}
+            </span>
+        </button>
+    </div>
+
     <hgroup>
         <h3>Caio Bernardo</h3>
         <p>Student | Researcher | Developer</p>
@@ -16,16 +27,6 @@
             <li><a href="/blog">/blog</a></li>
             <li><a href="/links">/links</a></li>
             <li><a href="/about">/about</a></li>
-            <li>
-                <button class="outline" id="theme-toggler">
-                    <span id="theme-moon" aria-label="Toggle Dark Mode">
-                        {{icons::icon(name="moon")}}
-                    </span>
-                    <span id="theme-sun" aria-label="Toggle Light Mode">
-                        {{icons::icon(name="sun")}}
-                    </span>
-                </button>
-            </li>
         </ul>
     </nav>
 </header>

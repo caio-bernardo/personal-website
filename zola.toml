@@ -15,8 +15,10 @@ build_search_index = false
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
+
 taxonomies = [
-    {name = "tags", feed=true}
+    {name = "tags", feed=true},
+    {name = "publish-year", feed=true}
 ]
 
 
@@ -27,6 +29,18 @@ bottom_footnotes = true
 
 [markdown.highlighting]
 theme = "kanagawa-wave"
+
+[languages.pt-br]
+title = "Caio Bernardo"
+generate_feeds = true
+taxonomies = [
+    {name = "tags", feed=true},
+    {name = "publish-year", feed=true}
+]
+
+[languages.pt-br.translations]
+summary = "Blog de Caio Bernardo"
+description = "Site pessoal de Caio Bernardo. Veja informações sobre mim ou leia alguns posts."
 
 [extra]
 # Put all your custom variables here

@@ -6,7 +6,7 @@
     </figure>
 
     <div class="sider">
-        <button class="outline contrast" id="theme-toggler">
+        <button class="outline" id="theme-toggler">
             <span id="theme-moon" aria-label="Toggle Dark Mode">
                 {{icons::icon(name="moon")}}
             </span>
@@ -23,10 +23,19 @@
 
     <nav style="display: flex; justify-content: center">
         <ul>
+            {% if lang is defined and lang != "en" %}
+            <li><a href="/{{lang}}">/home</a></li>
+            <li><a href="/{{lang}}/blog">/blog</a></li>
+            <li><a href="/{{lang}}/projects">/projects</a></li>
+            <li><a href="/{{lang}}/links">/links</a></li>
+            <li><a href="/{{lang}}/about">/about</a></li>
+            {% else %}
             <li><a href="/">/home</a></li>
             <li><a href="/blog">/blog</a></li>
+            <li><a href="/projects">/projects</a></li>
             <li><a href="/links">/links</a></li>
             <li><a href="/about">/about</a></li>
+            {% endif %}
         </ul>
     </nav>
 </header>

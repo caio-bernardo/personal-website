@@ -1,7 +1,7 @@
 +++
 +++
 
-# Hello, there!
+# Hello, there! :smile:
 
 <article>
     My name is Caio Bernardo. This is my spot on the internet,

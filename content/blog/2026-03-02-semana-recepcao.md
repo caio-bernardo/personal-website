@@ -3,6 +3,7 @@ title = "Dia das Entidades - Apresentação da Conway"
 date = "2026-03-02"
 
 template = "blog_post.html"
+slug = "apresentacao-conway-2026"
 
 [taxonomies]
 tags = ["conway-usp", "slice-of-life", "university"]

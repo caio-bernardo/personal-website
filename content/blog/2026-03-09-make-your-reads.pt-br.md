@@ -7,6 +7,7 @@ template = "blog_post.html"
 
 [taxonomies]
 tags = ["projects", "cli", "project-documentation"]
+publish-year = ["2026"]
 +++
 
 # Make your Reads: A CLI for making your Project Documentation
@@ -31,7 +32,7 @@ Presentations made, let's see a tool to ease the process of managing this files.
 
 It's a CLI tool built with Rust that comes with a preset of **curated templates of project metadata** for you to use!
 
-This project is actually a revival of an older one, made to generate _README_ files a long time ago. Instead of facing my problems directely I decided to rebuild the project from scratch. And I have not regret it yet! This version is more mature and refined than the previous. You can find the source code at [github](https://github.com/caio-bernardo/make-your-reads) and it's also  available at [crates.io](https://crates.io/crates/make-your-reads).
+This project is actually a revival of an older one, made to generate _README_ files a long time ago. Instead of facing my problems directely I decided to rebuild the project from scratch. And I have not regret it yet! This version is more mature and refined than the previous. You can find the source code at [github](https://github.com/caio-bernardo/make-your-reads) and it's also available at [crates.io](https://crates.io/crates/make-your-reads).
 
 ### Usage
 
@@ -61,6 +62,7 @@ Options:
 Firstly, the binary is called `mkyr` (because _myr_ was already taken :cry:). For each file type there is a equivalent command with a similar name. Each subcommand may work differently, some may ask the project's name, other provide some optional parameters to insert more information into the file. However, there're two fixed flags: `--force`, to override files, and `--path` to change the default output path.
 
 See the example of generating a README, the command line appears as:
+
 ```sh
 $ mkyr readme new_project
 New README created. Remember to change the file for your personal needs.
@@ -76,6 +78,7 @@ The generated files looks like:
 <!-- INSERT BANNER HERE -->
 
 <!-- INSERT BADGES HERE -->
+
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
 <!-- INSERT SHORT DESCRIPTION HERE -->
@@ -113,7 +116,7 @@ Don't forget to check our [Code of Conduct](CODE_OF_CONDUCT.md) for the reposito
 
 ## License
 
-This project is under the ___ license. For more info see [LICENSE](LICENSE).
+This project is under the \_\_\_ license. For more info see [LICENSE](LICENSE).
 
 This file was made with [Make Your Reads](https://github.com/caio-bernardo/make-your-reads).
 ```
@@ -141,11 +144,11 @@ Github is actually capable of generating most of this files using templates, you
 
 **Language Models**
 
-_Yeah_, my tool cannot compete with a *LLM*, I admit that. However, question yourself, is it worthy your tokens to ask an AI to generate this files, while a cheaper tool exists? You can even generate the files using *Make your Reads* and then ask the model to complete it.
+_Yeah_, my tool cannot compete with a _LLM_, I admit that. However, question yourself, is it worthy your tokens to ask an AI to generate this files, while a cheaper tool exists? You can even generate the files using _Make your Reads_ and then ask the model to complete it.
 
 ## Conclusion
 
-Organizing and developing a good documentation is essential for Open Source Projects, they can show the maturity of a project and help the developers to situate in your environment, so even if you don't use this tool, please, <mark>make your reads</mark>. 
+Organizing and developing a good documentation is essential for Open Source Projects, they can show the maturity of a project and help the developers to situate in your environment, so even if you don't use this tool, please, <mark>make your reads</mark>.
 
 Moreover, if you liked this project, give it a try or just a [star](https://github.com/caio-bernardo/make-your-reads) :star:. See you next time.
 

@@ -1,5 +1,5 @@
-@use "scss/pico" with (
-    $theme-color: "blue",
+@use "picocss/pico" with (
+    $theme-color: "azure",
     $enable-semantic-container: true,
     $enable-classes: true,
     $modules: (
@@ -21,8 +21,6 @@
         "utilities/reduce-motion": true,
     )
 );
-
-@use "scss/colors" as *;
 
 @use "links";
 @use "nav";

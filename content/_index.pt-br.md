@@ -10,7 +10,7 @@
 
 Minha citação favorita:
 {% quote(author="Usuário Anônimo do Tumblr") %}
-"Você não pode me matar de uma forma que importe."
+"Você não pode me matar de uma forma que faça diferença."
 {% end %}
 
 <section class="container center">

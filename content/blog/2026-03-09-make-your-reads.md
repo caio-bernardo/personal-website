@@ -2,7 +2,6 @@
 title = "Make your Reads: A CLI for making your Project Documentation"
 date = "2026-03-09"
 
-draft = true
 template = "blog_post.html"
 
 [taxonomies]

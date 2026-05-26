@@ -35,6 +35,7 @@ This my personal website, built with Zola, containing information about me, usef
 - [ ] Recent Posts on Home
 - [ ] Your Own Logo
 - [ ] Kanagawa Colorscheme
+- [ ] Subscribe should redirect to a modal that sends emails updates
 
 ## Acknowledgements
 

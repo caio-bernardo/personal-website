@@ -1,5 +1,5 @@
 +++
-title = "Dia das Entidades - Apresentação da Conway"
+title = "Entities Day — Conway Presentation"
 date = "2026-03-02"
 
 template = "blog_post.html"
@@ -7,26 +7,27 @@ slug = "apresentacao-conway-2026"
 
 [taxonomies]
 tags = ["conway-usp", "slice-of-life", "university"]
+publish-year = ["2026"]
 +++
 
-# Dia das Entidades - Apresentação da Conway
+# Entities Day — Conway Presentation
 
-Quinta-feira foi o "Dia das Entidades" na EACH/USP e tive a honra de apresentar, junto dos meus colegas de diretoria, a Conway! Nosso querido grupo de estudos de jogos e computação gráfica, com processo seletivo aberto inclusive 👀. Foi com certeza uma das apresentações mais divertidas que já participei e espero ter atraído a atenção dos nossos calouros (e futuro membros).
+Thursday was _Organizations' Day_ at EACH/USP and I had the honor of presenting, together with my fellow board members, Conway! Our beloved study group focused on games and computer graphics, with applications open too 👀. It was definitely one of the most fun presentations I’ve ever been part of, and I hope I managed to catch the attention of our freshmen (and future members).
 
-## Contexto
+## Contextualization
 
-Todo ano, durante a _Semana de Recepção_ do curso de Sistemas de Informação na EACH/USP, as entidades do curso &mdash; grupos estudantis, empresa júnior, diretório acadêmico e outros &mdash se apresentam aos calouros. E é claro que não poderia faltar o melhor ~~e único~~ grupo de estudos da EACH-USP focado no desenvolvimento de jogos e computação gráfica, a **Conway**!
+Every year, during the first week of the semester for the Information Systems program at EACH/USP, the course’s organizations — student groups, the junior enterprise, the student union, and others — introduce themselves to the freshmen. And of course the best ~~and only~~ study group at EACH-USP focused on game development and computer graphics couldn’t be missing: **Conway**!
 
-## Sobre a Conway
+## About Conway
 
-A Conway é um grupo de estudos, ou Liga Acadêmia[^1] se quiser ser mais formal, formado em 2024 por alguns amigos meus. Você já deve ter ouvido falar do [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life), ele **não** foi criado por nós! Mas nos inspirou no momento de escolher um nome para nossa entidade. Há quase um ano e meio estamos trabalhando em estruturar e organizar o grupo, já temos mais de 30 (trinta!) membros, três trilhas de estudo e mais quatro em produção, bem como muitos outros projetos vindo aí.
+Conway is a study group — or an _Academic League_[^1] if you want to be more formal — founded in 2024 by me and a few friends. You’ve probably heard of [Conway’s Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life); it was **not** created by us! But it did inspire us when it came time to choose a name for our group. For almost a year and a half, we’ve been working on structuring and organizing the group: we already have more than 30 (thirty!) members, three study tracks and four more in the works, plus many other projects on the way.
 
-## Sobre a Apresentação
+## About the Presentation
 
-Realizamos na verdade duas apresentações, uma para a turma da manhã e outra para a turma da noite. Em ambas estava nervoso, contudo, foi mais fluído repetir a apresentação para a turma da noite, consegui tirar umas boas risadas do público e fazê-los aplaudir quando anunciamos nosso [cronograma de eventos](https://www.instagram.com/p/DVevH3pAph-/?igsh=amU5Y25nY3NzbDZu) desse ano.
+We actually did two presentations: one for the morning students and another for the evening ones. I was nervous in both, but repeating it for the evening class went more smoothly — I managed to get some good laughs from the audience and even got them to clap when we announced our [event schedule](https://www.instagram.com/p/DVevH3pAph-/?igsh=amU5Y25nY3NzbDZu) for this year.
 
-Os slides da apresentação estão disponíveis no link abaixo.
+The slides for the presentation are available at the link below.
 
-[Slides da Apresentação para a Semana de Recepção de 2026 EACH/USP](/slides/semana-recepcao-2026.pdf)
+[Slides for the 2026 EACH/USP Welcome Week Presentation](/slides/semana-recepcao-2026.pdf)
 
-[^1]: [Liga Acadêmica - Quero Bolsa](https://querobolsa.com.br/revista/liga-academica)
+[^1]: [Academic League — Quero Bolsa](https://querobolsa.com.br/revista/liga-academica)

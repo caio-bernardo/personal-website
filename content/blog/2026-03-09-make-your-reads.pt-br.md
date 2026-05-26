@@ -1,8 +1,7 @@
 +++
-title = "Make your Reads: A CLI for making your Project Documentation"
+title = "Make your Reads: Uma CLI para a documentação do seu projeto"
 date = "2026-03-09"
 
-draft = true
 template = "blog_post.html"
 
 [taxonomies]
@@ -10,33 +9,33 @@ tags = ["projects", "cli", "project-documentation"]
 publish-year = ["2026"]
 +++
 
-# Make your Reads: A CLI for making your Project Documentation
+# Make your Reads: uma CLI para fazer a documentação do seu projeto
 
-Have you ever encounter one of those famous/professional Open Source projects and seen a dozen of `.txt` or `.md` files named like `CODE_OF_CONDUCT`, `CONTRIBUTING`, `CHANGELOG`, etc? Have you ever stopped to read them or think about what each file means? If you answered yes or I simply got your attention, then rejoice! In this article I will explain what each file means and showcase a project to help you creating these files.
+Você já encontrou algum daqueles projetos Open Source “famosos/profissionais” e viu uma dúzia de arquivos `.txt` ou `.md` com nomes tipo `CODE_OF_CONDUCT`, `CONTRIBUTING`, `CHANGELOG`, etc? Já parou pra ler eles ou pensar no que cada arquivo significa? Se você respondeu sim (ou se eu só consegui chamar sua atenção), então comemore: neste artigo eu vou explicar o que cada arquivo significa e mostrar um projeto que te ajuda a criar esses arquivos.
 
-## A quick glossary
+## Um glossário rápido
 
-They can be called _"Repository Metadata"_, "Project Documentation", Github calls some of them _"Community Health Files"_[^1]. They're a collection of different textual files, each one may have different propouses (with overlappig regions). Let's talk about those you may find in the wild:
+Esses arquivos podem ser chamados de “Documentação do Projeto”, “Metadados do Repositório” (ou _Repository Metadata_) e o GitHub chama alguns deles de _“Community Health Files”_[^1]. No geral, é uma coleção de arquivos de texto diferentes: cada um com um propósito específico (e com algumas áreas de sobreposição). Vamos falar dos mais comuns que você encontra por aí:
 
-1. `README.md`: you probably have seen this one. It's the entrypoint of your project, show what it is, what it does, how to do things. For me, the other files are just sections of the README that grew too large.
-1. `CONTRIBUTING.md`: how someone can contribute to your project, how to notify about a problem, suggest ideas or make a pull request.
-1. `CODE_OF_CONDUCT.md`: how someone should behave when interacting with the community surrounding this project. How to report inacceptable behaivor. This goes hand-in-hand with your ` CONTRIBUTING.md`
-1. `SECURITY.md`: this one is for projects where reporting a problem may put the software in risk or expose a vulnerability for cyberattacks. So you have a dedicated file to instruct people in how to report this type of issues.
-1. `CHANGELOG.md`: I like this one, it's a file mean to keep track of the changes in your project, as you deploy new versions.
-1. `LICENSE`: its a file that carries some legal (kinda) statements, you tell what people can do with your project, can they profit over it? Do they need to follow some rules? Your license defines all that.
-1. Others: there can be many more like `USAGE.md`, `FUNDING.md` and `ROADMAP.md`. You decide how your project is structured.
+1. `README.md`: você com certeza já viu esse. É a porta de entrada do projeto: mostra o que é, o que faz, como usar, como instalar, etc. Pra mim, os outros arquivos são só seções do README que cresceram demais.
+1. `CONTRIBUTING.md`: como alguém pode contribuir com o projeto; como reportar um problema, sugerir ideias ou abrir um pull request.
+1. `CODE_OF_CONDUCT.md`: como as pessoas devem se comportar ao interagir com a comunidade em torno do projeto. Também explica como reportar comportamento inaceitável. Isso anda lado a lado com o seu `CONTRIBUTING.md`.
+1. `SECURITY.md`: este é pra projetos onde reportar um problema pode colocar o software em risco ou expor uma vulnerabilidade para ataques. Então você cria um arquivo dedicado com instruções de como reportar esse tipo de issue.
+1. `CHANGELOG.md`: eu gosto desse. É um arquivo feito pra acompanhar mudanças no projeto conforme você lança novas versões.
+1. `LICENSE`: é um arquivo que carrega algumas declarações legais (mais ou menos). Você diz o que as pessoas podem fazer com o seu projeto: podem lucrar com ele? precisam seguir regras? A sua licença define isso.
+1. Outros: podem existir vários outros como `USAGE.md`, `FUNDING.md` e `ROADMAP.md`. Você decide como quer estruturar seu projeto.
 
-Presentations made, let's see a tool to ease the process of managing this files.
+Com isso apresentado, bora ver uma ferramenta que facilita o processo de gerenciar esses arquivos.
 
 ## Make your Reads
 
-It's a CLI tool built with Rust that comes with a preset of **curated templates of project metadata** for you to use!
+O _Make your Reads_ é uma CLI feita em Rust que vem com um conjunto de **templates curados de metadados/documentação de projeto** pra você usar.
 
-This project is actually a revival of an older one, made to generate _README_ files a long time ago. Instead of facing my problems directely I decided to rebuild the project from scratch. And I have not regret it yet! This version is more mature and refined than the previous. You can find the source code at [github](https://github.com/caio-bernardo/make-your-reads) and it's also available at [crates.io](https://crates.io/crates/make-your-reads).
+Esse projeto é, na verdade, um “revival” de um projeto mais antigo, feito pra gerar arquivos _README_ lá atrás. Ao invés de encarar meus problemas de frente, eu decidi reconstruir tudo do zero. E até agora eu não me arrependi! Essa versão está mais madura e mais refinada do que a anterior. Você pode encontrar o código-fonte no [GitHub](https://github.com/caio-bernardo/make-your-reads) e ele também está disponível no [crates.io](https://crates.io/crates/make-your-reads).
 
-### Usage
+### Uso
 
-Now that I have talked about my motivations, let's see how to use the tool.
+Agora que eu falei das minhas motivações, vamos ver como usar a ferramenta.
 
 ```sh
 $ mkyr help
@@ -59,16 +58,16 @@ Options:
   -V, --version      Print version
 ```
 
-Firstly, the binary is called `mkyr` (because _myr_ was already taken :cry:). For each file type there is a equivalent command with a similar name. Each subcommand may work differently, some may ask the project's name, other provide some optional parameters to insert more information into the file. However, there're two fixed flags: `--force`, to override files, and `--path` to change the default output path.
+Primeiro: o binário se chama `mkyr` (porque _myr_ já estava ocupado :cry:). Para cada tipo de arquivo existe um comando equivalente, com um nome parecido. Cada subcomando pode funcionar de um jeito: alguns pedem o nome do projeto, outros oferecem parâmetros opcionais pra inserir mais informações no arquivo. No entanto, existem duas flags fixas: `--force`, pra sobrescrever arquivos, e `--path`, pra mudar o caminho padrão de saída.
 
-See the example of generating a README, the command line appears as:
+Aqui vai um exemplo de como gerar um README. A linha de comando fica assim:
 
 ```sh
 $ mkyr readme new_project
 New README created. Remember to change the file for your personal needs.
 ```
 
-The generated files looks like:
+E o arquivo gerado fica assim:
 
 ```md
 <!-- This file conforms to the Standard Readme Style -->
@@ -121,35 +120,35 @@ This project is under the \_\_\_ license. For more info see [LICENSE](LICENSE).
 This file was made with [Make Your Reads](https://github.com/caio-bernardo/make-your-reads).
 ```
 
-Each space meant for you to complete has been marked with a comment, including suggestions and tips of what to do.
+Cada espaço que você precisa completar está marcado com um comentário, incluindo sugestões e dicas do que fazer.
 
-## Sources for the Templates
+## Fontes dos templates
 
-Almost all templates were gather from different places. I tried to get the more populars or the ones I liked the most, here goes a list of sources:
+Quase todos os templates foram coletados de lugares diferentes. Eu tentei pegar os mais populares (ou os que eu mais gostei). Aqui vai a lista de fontes:
 
-- READMEs from [README Standard](https://github.com/RichardLitt/standard-readme)
-- Changelog from [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
-- Contribution and Code of Conduct from [Contributor Covenant](https://www.contributor-covenant.org/)
-- Licenses from there sources, but the options came from [Choose a License](https://choosealicense.com/).
+- READMEs do [README Standard](https://github.com/RichardLitt/standard-readme)
+- Changelog do [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
+- Contribuição e Código de Conduta do [Contributor Covenant](https://www.contributor-covenant.org/)
+- Licenças de várias fontes, mas as opções vieram do [Choose a License](https://choosealicense.com/).
 
-## Similar tools
+## Ferramentas parecidas
 
-**Other tools**
+**Outras ferramentas**
 
-There are many websites or CLIs specialized in generating `README` files, but I have never seen one for the others **and** bundled as a **single tool**. If you know one, please tell through the comments or send a message!
+Existem muitos sites e CLIs especializadas em gerar `README`, mas eu nunca tinha visto uma que fizesse o mesmo pros outros arquivos **e**, ao mesmo tempo, estivesse tudo empacotado em **uma única ferramenta**. Se você conhece alguma, por favor me conta pelos comentários ou me manda uma mensagem.
 
-**Github File Generators**
+**Geradores de arquivo do GitHub**
 
-Github is actually capable of generating most of this files using templates, you just need to put the desired name and choose your options. Actually, I have taken the `CODE_OF_CONDUCT` options from them. I'm not trying to compete with them, but if you don't use Github or prefere a **local** option, _make your reads_ is probably more attractive to you.
+O GitHub consegue gerar a maioria desses arquivos usando templates: você só precisa colocar o nome desejado e escolher suas opções. Inclusive, eu peguei as opções de `CODE_OF_CONDUCT` de lá. Eu não estou tentando competir com eles; mas se você não usa GitHub ou prefere uma opção **local**, o _Make your Reads_ provavelmente é mais atraente.
 
-**Language Models**
+**Modelos de linguagem**
 
-_Yeah_, my tool cannot compete with a _LLM_, I admit that. However, question yourself, is it worthy your tokens to ask an AI to generate this files, while a cheaper tool exists? You can even generate the files using _Make your Reads_ and then ask the model to complete it.
+_Sim_, a minha ferramenta não consegue competir com um _LLM_, eu admito. Mas se pergunte: vale a pena gastar seus tokens pedindo pra uma IA gerar esses arquivos, quando existe uma ferramenta mais barata? Você pode até gerar os arquivos com o _Make your Reads_ e depois pedir pro modelo completar.
 
-## Conclusion
+## Conclusão
 
-Organizing and developing a good documentation is essential for Open Source Projects, they can show the maturity of a project and help the developers to situate in your environment, so even if you don't use this tool, please, <mark>make your reads</mark>.
+Organizar e desenvolver uma boa documentação é essencial pra projetos Open Source: isso mostra maturidade e ajuda outras pessoas a se situarem no ambiente. Então, mesmo que você não use essa ferramenta, por favor: <mark>make your reads</mark>.
 
-Moreover, if you liked this project, give it a try or just a [star](https://github.com/caio-bernardo/make-your-reads) :star:. See you next time.
+Além disso, se você curtiu o projeto, dá uma chance — ou só deixa uma [estrela](https://github.com/caio-bernardo/make-your-reads) :star:. Até a próxima.
 
 [^1]: [Community Health Files - Github Docs](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file)

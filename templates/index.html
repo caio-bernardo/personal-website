@@ -1,2 +1,31 @@
-{% extends 'base.html' %} {% block main %} {{section.content | safe}} {%
-endblock main %}
+{% extends 'base.html' %} {% block main %} {{section.content | safe}}
+
+<br />
+{# Recent Posts #} {% set articles = get_section(path="blog/_index.md",
+lang=lang, required=false)%} {% if articles %}
+<section>
+    {% if lang == "pt-br" %}
+    <h2>Postagens Recentes</h2>
+    {% else %}
+    <h2>Recent Posts</h2>
+    {% endif %}
+    <ul class="no-list-style posts-list">
+        {# takes the 5 most recent posts #} {% for article in articles.pages |
+        sort(attribute="date") | reverse | slice(end=5)%}
+        <li>
+            <a class="post" href="{{article.permalink}}">
+                <article>
+                    <time>{{article.date | date(format="%Y-%m-%d")}}</time>
+                    <h4>{{article.title}}</h4>
+                </article>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <a role="button" href="{{ get_url(path='@/blog/_index.md', lang=lang) }}">
+        {% if lang == "pt-br" %} ver todos os posts {% else %} view all posts {%
+        endif %}
+    </a>
+</section>
+{% endif %} {% endblock main %}

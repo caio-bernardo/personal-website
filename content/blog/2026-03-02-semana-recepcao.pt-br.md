@@ -7,6 +7,7 @@ slug = "apresentacao-conway-2026"
 
 [taxonomies]
 tags = ["conway-usp", "slice-of-life", "university"]
+publish-year = ["2026"]
 +++
 
 # Dia das Entidades - Apresentação da Conway

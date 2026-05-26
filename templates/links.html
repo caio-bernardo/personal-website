@@ -6,16 +6,12 @@
 
 <div class="container">
     {% for link in page.extra.links %}
-    <article class="icon-card">
-        <a
-            href="{{link.url}}"
-            rel="me"
-            aria-label="{{ link.name | capitalize }}"
-        >
+    <a href="{{link.url}}" rel="me" aria-label="{{ link.name | capitalize }}">
+        <article class="icon-card">
             {{ icons::icon(name=link.name) }}
             <p>{{link.name}}</p>
-        </a>
-    </article>
+        </article>
+    </a>
     {% endfor %}
 </div>
 {% endblock main %}

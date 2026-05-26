@@ -6,12 +6,12 @@
     </hgroup>
 </section>
 
-<hr />
 <section>
     {% for page in section.pages %}
+    <hr />
     <article class="unstyled">
         <hgroup>
-            <h3><a class="contrast" href="{{page.permalink}}">{{page.title}}</a></h3>
+            <h3><a style="text-decoration: none;" href="{{page.permalink}}">{{page.title}}</a></h3>
             <p>{{page.date}}</p>
             <p>
             {% if page.taxonomies.tags %}

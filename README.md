@@ -3,9 +3,11 @@
 # Personal Website
 
 <!-- INSERT BANNER HERE -->
+
 ![Great Wave of Kanagawa](static/images/Tsunami_by_hokusai_19th_century.jpg)
 
 <!-- INSERT BADGES HERE -->
+
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
 This my personal website, built with Zola, containing information about me, useful links, my resume and some blog posts. Includes a Fediverse linked comment section!
@@ -26,14 +28,20 @@ This my personal website, built with Zola, containing information about me, usef
 - [x] Implement webmentions
 - [x] Fix font problems in mobile
 - [x] Mastodon Comments
-- [ ] Make a portuguese version
+- [x] Portuguese version
+- [ ] Traduzir todos os posts
+- [ ] Botão que troca de lingua
+- [ ] Add search bar
+- [ ] Recent Posts on Home
+- [ ] Your Own Logo
+- [ ] Kanagawa Colorscheme
 
- ## Acknowledgements 
- 
- - [Gabriel Monteiro's Website](https://gabrielsouza.top/)
- - [Marcus Obst's Website](https://marcus-obst.de/)
- - Built with [Zola](https://getzola.org)
- - Built with [Pico CSS](https://picocss.com)
+## Acknowledgements
+
+- [Gabriel Monteiro's Website](https://gabrielsouza.top/)
+- [Marcus Obst's Website](https://marcus-obst.de/)
+- Built with [Zola](https://getzola.org)
+- Built with [Pico CSS](https://picocss.com)
 
 ## Contributing
 

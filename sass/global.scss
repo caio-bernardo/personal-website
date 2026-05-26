@@ -11,7 +11,7 @@
         "forms/input-search": false,
         "components/accordion": false,
         "components/card": true,
-        "components/dropdown": false,
+        "components/dropdown": true,
         "components/loading": false,
         "components/modal": false,
         "components/nav": true,
@@ -21,6 +21,8 @@
         "utilities/reduce-motion": true,
     )
 );
+
+@use "scss/colors" as *;
 
 @use "links";
 @use "nav";
@@ -51,4 +53,9 @@
         padding-left: 21vw;
         padding-right: 21vw;
     }
+}
+
+a.zola-anchor {
+    all: unset;
+    cursor: pointer;
 }

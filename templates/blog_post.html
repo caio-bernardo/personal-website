@@ -11,7 +11,7 @@
         Tags:
         {% if page.taxonomies.tags %}
             {% for tag in page.taxonomies.tags %}
-            <span><a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">#{{ tag }}</a></span>
+            <span><a href="{{ get_taxonomy_url(kind="tags", name=tag, lang=lang) | safe }}">#{{ tag }}</a></span>
             {% endfor %}
         {% endif %}<br/>
         Read Time: <em>{{page.reading_time}} minute</em>

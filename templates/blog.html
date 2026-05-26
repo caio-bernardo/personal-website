@@ -11,12 +11,12 @@
     {% for page in section.pages %}
     <article class="unstyled">
         <hgroup>
-            <h3><a href="{{page.permalink}}">{{page.title}}</a></h3>
+            <h3><a class="contrast" href="{{page.permalink}}">{{page.title}}</a></h3>
             <p>{{page.date}}</p>
             <p>
             {% if page.taxonomies.tags %}
                 {% for tag in page.taxonomies.tags %}
-                <span><a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">#{{ tag }}</a></span>
+                <span><a href="{{ get_taxonomy_url(kind="tags", name=tag, lang=lang) | safe }}">#{{ tag }}</a></span>
                 {% endfor %}
             {% endif %}
             </p>

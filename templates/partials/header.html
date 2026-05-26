@@ -5,6 +5,17 @@
         <img src="{{image.url}}" alt="Kanagawa Great Wave Logo" />
     </figure>
 
+    <div class="sider">
+        <button class="outline" id="theme-toggler">
+            <span id="theme-moon" aria-label="Toggle Dark Mode">
+                {{icons::icon(name="moon")}}
+            </span>
+            <span id="theme-sun" aria-label="Toggle Light Mode">
+                {{icons::icon(name="sun")}}
+            </span>
+        </button>
+    </div>
+
     <hgroup>
         <h3>Caio Bernardo</h3>
         <p>Student | Researcher | Developer</p>
@@ -12,20 +23,19 @@
 
     <nav style="display: flex; justify-content: center">
         <ul>
+            {% if lang is defined and lang != "en" %}
+            <li><a href="/{{lang}}">/home</a></li>
+            <li><a href="/{{lang}}/blog">/blog</a></li>
+            <li><a href="/{{lang}}/projects">/projects</a></li>
+            <li><a href="/{{lang}}/links">/links</a></li>
+            <li><a href="/{{lang}}/about">/about</a></li>
+            {% else %}
             <li><a href="/">/home</a></li>
             <li><a href="/blog">/blog</a></li>
+            <li><a href="/projects">/projects</a></li>
             <li><a href="/links">/links</a></li>
             <li><a href="/about">/about</a></li>
-            <li>
-                <button class="outline" id="theme-toggler">
-                    <span id="theme-moon" aria-label="Toggle Dark Mode">
-                        {{icons::icon(name="moon")}}
-                    </span>
-                    <span id="theme-sun" aria-label="Toggle Light Mode">
-                        {{icons::icon(name="sun")}}
-                    </span>
-                </button>
-            </li>
+            {% endif %}
         </ul>
     </nav>
 </header>

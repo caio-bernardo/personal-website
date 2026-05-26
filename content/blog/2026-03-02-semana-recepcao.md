@@ -3,6 +3,7 @@ title = "Dia das Entidades - Apresentação da Conway"
 date = "2026-03-02"
 
 template = "blog_post.html"
+slug = "apresentacao-conway-2026"
 
 [taxonomies]
 tags = ["conway-usp", "slice-of-life", "university"]
@@ -22,7 +23,7 @@ A Conway é um grupo de estudos, ou Liga Acadêmia[^1] se quiser ser mais formal
 
 ## Sobre a Apresentação
 
-Realizamos na verdade duas apresentações, uma para a turma da manhã e outra para a turma da noite. Em ambas estava nervoso, contudo, foi mais fluído repetir a apresentação para a turma da noite, consegui tirar umas boas risadas do público e fazê-los aplaudir quando anunciamos nosso _cronograma de eventos_ desse ano.
+Realizamos na verdade duas apresentações, uma para a turma da manhã e outra para a turma da noite. Em ambas estava nervoso, contudo, foi mais fluído repetir a apresentação para a turma da noite, consegui tirar umas boas risadas do público e fazê-los aplaudir quando anunciamos nosso [cronograma de eventos](https://www.instagram.com/p/DVevH3pAph-/?igsh=amU5Y25nY3NzbDZu) desse ano.
 
 Os slides da apresentação estão disponíveis no link abaixo.
 

@@ -7,4 +7,5 @@ template = "blog.html"
 +++
 
 # Blog [{{ icon(name="rss")}}](/atom.xml)
-[#tags](/tags).
+
+[#tags](/tags) [#publish-year](/publish-year).

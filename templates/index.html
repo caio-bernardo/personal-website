@@ -11,7 +11,7 @@ lang=lang, required=false)%} {% if articles %}
     {% endif %}
     <ul class="no-list-style posts-list">
         {# takes the 5 most recent posts #} {% for article in articles.pages |
-        sort(attribute="date") | reverse | slice(end=5)%}
+        sort(attribute="date") | reverse | slice(end=3)%}
         <li>
             <a class="post" href="{{article.permalink}}">
                 <article>

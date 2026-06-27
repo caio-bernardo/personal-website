@@ -1,19 +1,27 @@
 +++
+title = "Home"
+template = "index.html"
 +++
 
-# Hello, there! :smile:
+# Hello, I'm Caio!
 
-<article>
-    My name is Caio Bernardo. This is my spot on the internet,
-    here I intend to share my personal information, showcase some projects and sometimes
-    a post I found the courage to publish.
-</article>
+My name is Caio Bernardo, I'm a **student**, **software developer** and **academic researcher**. Here is my spot on the internet, see my posts, projects and more about me!
 
-My favorite quote:
+## What are you looking for?
+
+Click in the following links if you want to...
+
+- See my [projects](@/projects/_index.md).
+- See my [link tree](@/links/index.md) (contact info).
+- See my blog [posts](@/posts/_index.md).
+- See [who I am](@/about.md).
+
+My favourite quote:
+
 {% quote(author="Anounymous Tumblr User") %}
 "You can not kill me in a way that matters."
 {% end %}
 
-<section class="container center">
+<section style="display: flex; justify-content: center;">
     <img src="https://app.greenweb.org/api/v3/greencheckimage/caiobernardo.top?nocache=true" alt="This website runs on green hosting - verified by thegreenwebfoundation.org" loading="lazy" width="200px" height="95px">
 </section>

@@ -1,15 +1,12 @@
-{% extends "base.html" %} {% block main %} {% set taxonomy =
-get_taxonomy(kind=taxonomy.name, lang=lang) %}
+{% extends "base.html" %}
 
-<h1>{{ taxonomy.name }}</h1>
-
-<ul>
-    {% for term in taxonomy.items %}
-    <li>
-        <a href="{{ term.permalink }}">{{ term.name }}</a>
-        ({{ term.pages | length }})
-    </li>
-    {% endfor %}
+{% block content %}
+<h1>{{ taxonomy.name | capitalize }}</h1>
+{% if terms %}
+<ul class="tags">
+  {% for term in terms %}
+  <li>#<a href="{{ term.permalink | safe }}">{{ term.name }}</a> ({{ term.pages | length }})</li>
+  {% endfor %}
 </ul>
-
-{% endblock main %}
+{% endif %}
+{% endblock content %}

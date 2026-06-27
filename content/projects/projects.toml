@@ -1,0 +1,62 @@
+# Projects Collection
+# Each project can have the following fields:
+#   title       - Project name (required)
+#   description - Brief description
+#   url         - Link to project (external URL or internal path)
+#   image       - Image filename (relative to this folder)
+#   emoji       - Emoji icon displayed before title
+#   date        - Date or date range (e.g., "2024" or "2023-2024")
+#   status      - Current status (e.g., "Active", "Completed", "Archived")
+#   tags        - List of tags/technologies
+
+[[projects]]
+title = "Dragonite"
+description = "A federated multi-party chat server, using the Matrix protocol. I was mainly responsible to lead, design and implement the backend server. A post about this project is comming soon..."
+url = "https://github.com/caio-bernardo/dragonite"
+emoji = "💬"
+date = "2026"
+status = "Active"
+tags = ["go", "matrix", "chat", "system design", "server"]
+
+[[projects]]
+title = "Digital Twin Chat"
+date = "2025-2026"
+
+[[projects]]
+title = "Deadly Encounter"
+date = "2026"
+
+[[projects]]
+title = "2D & 3D GameDev Course"
+
+[[projects]]
+title = "Fish Net"
+date = "2025"
+
+[[projects]]
+title = "Make Your Reads"
+emoji = "📑"
+description = "Command-line interface to generate project documentations, like READMEs and LICENSEs. "
+url = "https://github.com/caio-bernardo/project"
+date = "2025"
+status = "Active"
+tags = ["rust", "cli", "project documenation", "open-source"]
+
+[[projects]]
+title = "EDNA Bar"
+
+
+[[projects]]
+title = "Shoot'em Up!"
+date = "2025"
+
+[[projects]]
+title = "Lucky Crab"
+
+[[projects]]
+title = "Blabinha 2.0"
+date = "2024-2025"
+
+[[projects]]
+title = "Blabinha-Robios"
+date = "2024-2025"

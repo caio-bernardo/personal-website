@@ -1,10 +1,10 @@
 +++
 title = "About"
+template = "page.html"
 +++
 
-<article class="grid h-card" id="photo-card">
-    {{ resize_img(path="/images/profile.jpg", width=236, height=236, op="fit",
-    alt="Caio Bernardo Photo", class="about-img u-photo") }}
+<article style="display: flex; gap: 1em;">
+{{ image(src="profile.jpg", path="/images/" alt="Caio Bernardo Photo") }}
 
 <address>
     <a class="p-name" rel="me" href="https://caiobernardo.top">
@@ -18,6 +18,8 @@ title = "About"
 </address>
 
 </article>
+
+<!--More-->
 
 Below, you can find my resume in both Portuguese and English, both signed and verified.
 

@@ -1,0 +1,266 @@
+@use "variables" as *;
+
+html {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: auto;
+    max-width: 70ch;
+    padding: 1.5rem 1em 3em;
+}
+img {
+    max-width: 100%;
+}
+img:not([src$=".svg"]),
+article > div,
+blockquote,
+pre {
+    border-radius: 0.4rem;
+}
+img[src$="#pixelate"] {
+    image-rendering: pixelated;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 1.5rem 0 0.75rem;
+}
+h1 {
+    font-size: 1.75rem;
+}
+h2 {
+    font-size: 1.375rem;
+}
+h3 {
+    font-size: 1.125rem;
+}
+p {
+    text-align: justify;
+}
+p,
+ul,
+ol,
+article > footer,
+article > header {
+    margin: 0 0 1.5rem;
+}
+pre,
+blockquote {
+    padding: 1.5rem;
+    margin: 0 0 1.5rem;
+}
+pre {
+    overflow-x: auto;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+pre code {
+    background: 0 !important;
+    padding: 0;
+    font-size: inherit;
+}
+code {
+    font-family:
+        ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.9em;
+    padding: 0.15em 0.4em;
+    border-radius: 0.25rem;
+}
+blockquote > *:last-child {
+    margin-bottom: 0;
+}
+article > img,
+article > p > img,
+article > div {
+    display: block;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+.yt {
+    aspect-ratio: 16/9;
+    width: 100%;
+    overflow: hidden;
+}
+.yt iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.s {
+    font-size: 0.85rem;
+}
+
+.theme {
+    display: inline-block;
+    width: 1.125rem;
+    height: 1.125rem;
+    vertical-align: middle;
+    margin-bottom: 0.15rem;
+}
+
+.theme img,
+.theme svg {
+    width: 100%;
+    height: 100%;
+    fill: $text;
+}
+
+[data-theme="light"] .theme img:first-child,
+[data-theme="light"] .theme svg:first-child {
+    display: none;
+}
+
+[data-theme="dark"] .theme img:last-child,
+[data-theme="dark"] .theme svg:last-child {
+    display: none;
+}
+
+header strong {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 600;
+    color: $accent;
+}
+.site-icon {
+    width: 2.25rem;
+    height: 2.25rem;
+    vertical-align: middle;
+    margin-right: 1rem;
+    color: $accent;
+}
+.header-brand {
+    display: flex;
+    align-items: center;
+}
+.custom-icon {
+    height: auto;
+    max-height: 3rem;
+    width: auto;
+    margin-right: 1rem;
+}
+body > footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+body > footer img,
+body > footer svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+}
+.tags {
+    list-style: none;
+    padding: 0;
+    margin: 0.75rem 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+}
+.tags li {
+    display: inline;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    margin-bottom: 1.5rem;
+}
+nav a {
+    font-weight: 500;
+}
+nav img,
+nav svg {
+    display: none;
+}
+.p {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+}
+.p li {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 0.75rem;
+    align-items: baseline;
+}
+.p li:last-child {
+    margin-bottom: 0;
+}
+.p time {
+    opacity: 0.7;
+    flex-shrink: 0;
+}
+.profile-pic {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50% !important;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 1.5rem;
+}
+.projects .project {
+    margin-bottom: 1.5rem;
+}
+.project header {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+.project header h2 {
+    margin: 0;
+    font-size: 1.375rem;
+}
+.project-emoji {
+    font-size: 1.5rem;
+}
+.project-image {
+    max-width: 200px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    float: right;
+    margin: 0 0 1.5rem 1.5rem;
+    border-radius: 0.4rem;
+}
+.project p {
+    margin-bottom: 0.75rem;
+}
+.project .tags {
+    margin: 0;
+}
+.lb {
+    position: fixed;
+    inset: 0;
+    background: #000d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    cursor: pointer;
+}
+.lb img {
+    max-width: 95vw;
+    max-height: 95vh;
+}
+
+@media (max-width: 30em) {
+    header .desc {
+        display: none;
+    }
+    @if $nav-count {
+        nav {
+            flex-wrap: wrap;
+            row-gap: 1.5rem;
+        }
+        nav a {
+            flex-basis: var(--basis);
+        }
+    }
+}

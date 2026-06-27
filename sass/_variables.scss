@@ -1,0 +1,27 @@
+/* Configuration of variables in the global scope */
+
+/* Uses light-dark() function to determine the contents of the variables */
+:root {
+    color-scheme: light dark;
+    --bg-main: light-dark(var(--light-bg), var(--dark-bg));
+    --accent: light-dark(var(--light-accent), var(--dark-accent));
+    --accent-hover: light-dark(
+        var(--light-accent-hover),
+        var(--dark-accent-hover)
+    );
+    --text: light-dark(var(--light-text), var(--dark-text));
+    --text-muted: light-dark(var(--light-text-muted), var(--dark-text-muted));
+    --code-bg: light-dark(var(--light-code-bg), var(--dark-code-bg));
+    --border: light-dark(var(--light-border), var(--dark-border));
+}
+
+$bg-main: var(--bg-main);
+$accent: var(--accent);
+$accent-hover: var(--accent-hover);
+$text: var(--text);
+$text-muted: var(--text-muted);
+$code-bg: var(--code-bg);
+$border: var(--border);
+
+$nav-count: var(--nav-count);
+$basis: var(--basis);

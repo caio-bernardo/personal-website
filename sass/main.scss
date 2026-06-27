@@ -1,1 +1,8 @@
+@import "base";
+@import "theme";
 @import "links";
+@import "comments";
+
+mark {
+    background-color: $fujiWhite;
+}

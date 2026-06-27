@@ -74,7 +74,7 @@ profile_picture = "/images/profile.jpg"
 # Enable inline SVG icons (uses sprite sheet).
 inline_icons = true
 icon_path = "static/icons/"
-icons = ["light", "asleep", "rss"]
+icons = ["light", "asleep", "rss", "email", "github", "lattes", "linkedin", "mastodon"]
 
 # Responsive images
 image_format = "auto"

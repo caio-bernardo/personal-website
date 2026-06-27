@@ -37,6 +37,6 @@ This website was created for many reasons:
 3. I love writing and thought a blog would motivate me to write more often.
 4. I saw lot of content about the [IndieWeb](https://indieweb.org/) and decided to participate.
 
-Therefore, I made this website &mdash; taking inspiration from many sources (more details in [here](/blog/first-post)) &mdash; where we have a humble [blog](/blog) for posts, an enumeration of my [projects](/projects) and a page with [links](/links) for my main social medias.
+Therefore, I made this website &mdash; taking inspiration from many sources (more details in [here](@/posts/2026-02-19-hello/index.md)) &mdash; where we have a humble [blog](@/posts/_index.md) for posts, an enumeration of my [projects](@/projects/_index.md) and a page with [links](@/links/index.md) for my main social medias.
 
 That said, I promise to try my best to keep this site on the running and updated.

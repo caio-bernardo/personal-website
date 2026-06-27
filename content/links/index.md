@@ -1,5 +1,5 @@
 +++
-title = "Link"
+title = "Links"
 description = "My link tree"
 template = "links.html"
 +++

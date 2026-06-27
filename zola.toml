@@ -30,6 +30,8 @@ include_title = true
 include_description = true
 # include datetime of page in the index search
 include_date = true
+# Include pages contents to the search
+include_content = true
 
 [markdown]
 # use unicode emojis in markdown :smile:

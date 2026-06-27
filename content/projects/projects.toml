@@ -9,54 +9,44 @@
 #   status      - Current status (e.g., "Active", "Completed", "Archived")
 #   tags        - List of tags/technologies
 
+# TIP: try to describe projects with: 1. what it's 2. techstack 3. what you solved 4. what was the result
+
 [[projects]]
 title = "Dragonite"
-description = "A federated multi-party chat server, using the Matrix protocol. I was mainly responsible to lead, design and implement the backend server. A post about this project is comming soon..."
+description = """A federated, multi-party chat server built with Go that implements the Matrix Protocol specification. The architecture utilizes Postgres for persistent event storage, Redis for low-latency cache and trasaction validation, and MinIO for scalable object storage. It supports interoperability with existing Matrix clients (i.e. Element.io), allowing users to participate in chat rooms across the Matrix federation network. Acted as scrum master and implemented state resolution algorithm to synchronize chat histories across federated servers."""
 url = "https://github.com/caio-bernardo/dragonite"
 emoji = "💬"
 date = "2026"
 status = "Active"
-tags = ["go", "matrix", "chat", "system design", "server"]
+tags = ["go", "distributed systems", "postgresql", "redis"]
 
 [[projects]]
 title = "Digital Twin Chat"
+description = """A distributed microservice architecture utilizing a digital twin approach to monitor, evaluate and simulate prototype conversational agents. Developed as part of an academic research, the systems combines Python and LangChain ecosystem to mirror chatbot behaviors in real-time and evalutes using process mining techniques of classification. I architected the core infrastructure to provide isolated environments for automated evaluation, tracking and testing of LLM-driven agents."""
+url = "https://github.com/caio-bernardo/dt-chat"
+emoji = "🤖"
 date = "2025-2026"
-
-[[projects]]
-title = "Deadly Encounter"
-date = "2026"
-
-[[projects]]
-title = "2D & 3D GameDev Course"
-
-[[projects]]
-title = "Fish Net"
-date = "2025"
+status = "Active"
+tags = ["python", "langchain", "microservices", "digital twin", "docker", "LLMOps"]
 
 [[projects]]
 title = "Make Your Reads"
 emoji = "📑"
-description = "Command-line interface to generate project documentations, like READMEs and LICENSEs. "
-url = "https://github.com/caio-bernardo/project"
+description = """A high-performance command-line tool built with Rust that
+automates the generation of project documentation, including READMEs, LICENSEs,
+and custom templates. It streamlines developer workflows by enabling rapid,
+structured scaffolding of critical repository files, reducing setup time."""
+url = "https://github.com/caio-bernardo/make-your-reads"
 date = "2025"
 status = "Active"
-tags = ["rust", "cli", "project documenation", "open-source"]
-
+tags = ["rust", "cli", "automation", "developer-experience"]
 [[projects]]
-title = "EDNA Bar"
 
-
-[[projects]]
-title = "Shoot'em Up!"
-date = "2025"
-
-[[projects]]
-title = "Lucky Crab"
-
-[[projects]]
-title = "Blabinha 2.0"
-date = "2024-2025"
-
-[[projects]]
-title = "Blabinha-Robios"
-date = "2024-2025"
+title = "Deadly Encounter"
+description = "Modified rock-paper-scissor game, built with Lua and LÖVE 2D framework for the LÖVE JAM 2026. Players battle against six unique enemies using a combat system of attacking, blocking and dodging attacks. To define the difficulty curve, I designed a AI decision tree for enemies behaviors, ensuring each opponent utilizes different combat strategies, powers and items as the player progresses."
+url = "https://github.com/ConwayUSP/Deadly-Encounter"
+emoji = "🥊"
+date = "2026"
+image = "DeadlyEncounterMenu.png"
+status = "Completed"
+tags = ["lua", "game jam", "LÖVE 2D", "game ai"]

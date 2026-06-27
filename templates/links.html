@@ -1,32 +1,25 @@
-{% extends "base.html" %}
-{% block content %}
-{% if config.extra.profile_picture %}
+{% extends "base.html" %} {% block content %} {% if config.extra.profile_picture
+%}
 <img
     src="{{ config.extra.profile_picture }}"
     alt="Profile picture"
     class="profile-pic"
 />
-{% endif %}
-{{ page.content | safe }}
-
-{% set links_data = load_data(path="content/" ~ page.path ~ "links.toml", required=false) -%}
-{% if links_data and links_data.links -%}
+{% endif %} {{ page.content | safe }} {% set links_data =
+load_data(path="content/" ~ page.path ~ "links.toml", required=false) -%} {% if
+links_data and links_data.links -%}
 <ul class="links">
     {% for link in links_data.links -%}
     <li class="link">
         <a href="{{ link.url }}">
-            {% if link.icon -%}
-            {{ icons::icon(name=link.icon) }}
-            {% endif %}
-            {{ link.title }}
+            {% if link.icon -%} {{ icons::icon(name=link.icon) }} {% endif %} {{
+            link.title }}
         </a>
     </li>
     {% if not loop.last %}
     <hr />
-    {% endif %}
-    {% endfor -%}
-</div>
+    {% endif %} {% endfor -%}
+</ul>
 {% else -%}
-    <p>No links found. Add a <code>links.toml</code> file to this section.</p>
-{% endif -%}
-{% endblock content %}
+<p>No links found. Add a <code>links.toml</code> file to this section.</p>
+{% endif -%} {% endblock content %}

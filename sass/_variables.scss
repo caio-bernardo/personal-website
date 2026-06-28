@@ -4,6 +4,7 @@
 :root {
     color-scheme: light dark;
     --bg-main: light-dark(var(--light-bg), var(--dark-bg));
+    --bg-surface: light-dark(var(--light-bg-surface), var(--dark-bg-surface));
     --accent: light-dark(var(--light-accent), var(--dark-accent));
     --accent-hover: light-dark(
         var(--light-accent-hover),
@@ -16,8 +17,10 @@
 }
 
 $bg-main: var(--bg-main);
+$bg-surface: var(--bg-surface);
 $accent: var(--accent);
 $accent-hover: var(--accent-hover);
+$accent-text: #fff;
 $text: var(--text);
 $text-muted: var(--text-muted);
 $code-bg: var(--code-bg);

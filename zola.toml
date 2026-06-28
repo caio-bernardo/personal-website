@@ -99,6 +99,7 @@ menu_links = [
 # NOTE: Austere Light colours.
 [extra.colours.light]
 background = "#FAF7F2"
+surface = "#f2eadd"
 text = "#1a1a1a"
 text_muted = "#3a3a3a"
 accent = "#9E4440"
@@ -109,6 +110,7 @@ border = "#e0d9ce"
 # NOTE: Austere Dark colours.
 [extra.colours.dark]
 background = "#141413"
+surface = "#242422"
 text = "#e8e8e8"
 text_muted = "#a0a0a0"
 accent = "#E07A5F"

@@ -51,6 +51,7 @@ social -%} {% import "macros/hooks.html" as hooks -%} {% import
 
         {# Colour configuration with defaults #}
         {% set light_bg = config.extra.colours.light.background | default(value="#FAF7F2") %}
+        {% set light_surface = config.extra.colours.light.surface | default(value="#FAF7F2") %}
         {% set light_text = config.extra.colours.light.text | default(value="#1a1a1a") %}
         {% set light_text_muted = config.extra.colours.light.text_muted | default(value="#3a3a3a") %}
         {% set light_accent = config.extra.colours.light.accent | default(value="#B85450") %}
@@ -58,6 +59,7 @@ social -%} {% import "macros/hooks.html" as hooks -%} {% import
         {% set light_code_bg = config.extra.colours.light.code_bg | default(value="#f0ebe3") %}
         {% set light_border = config.extra.colours.light.border | default(value="#e0d9ce") %}
         {% set dark_bg = config.extra.colours.dark.background | default(value="#141413") %}
+        {% set dark_surface = config.extra.colours.dark.surface | default(value="#141413") %}
         {% set dark_text = config.extra.colours.dark.text | default(value="#e8e8e8") %}
         {% set dark_text_muted = config.extra.colours.dark.text_muted | default(value="#a0a0a0") %}
         {% set dark_accent = config.extra.colours.dark.accent | default(value="#E07A5F") %}
@@ -68,6 +70,7 @@ social -%} {% import "macros/hooks.html" as hooks -%} {% import
             :root {
                 /* Light theme */
                 --light-bg: {{light_bg}};
+                --light-bg-surface: {{light_surface}};
                 --light-text: {{light_text}};
                 --light-text-muted: {{light_text_muted}};
                 --light-accent: {{light_accent}};
@@ -76,6 +79,7 @@ social -%} {% import "macros/hooks.html" as hooks -%} {% import
                 --light-border: {{light_border}};
                 /* Dark theme */
                 --dark-bg: {{dark_bg}};
+                --dark-bg-surface: {{dark_surface}};
                 --dark-text: {{dark_text}};
                 --dark-text-muted: {{dark_text_muted}};
                 --dark-accent: {{dark_accent}};

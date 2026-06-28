@@ -49,7 +49,8 @@ error_on_missing_language = true
 # Use inline css to specify code highlighting
 style = "inline"
 # Specify the hl themes for light and dark modes
-theme = "kanagawa-wave"
+dark_theme = "kanagawa-dragon"
+light_theme = "kanagawa-lotus"
 
 [slugify]
 # Controls slugification for page/section URLs.
@@ -107,43 +108,24 @@ accent_hover = "#7A3533"
 code_bg = "#f0ebe3"
 border = "#e0d9ce"
 
-# NOTE: Austere Dark colours.
+# # NOTE: Austere Dark colours.
+# [extra.colours.dark]
+# background = "#141413"
+# surface = "#242422"
+# text = "#e8e8e8"
+# text_muted = "#a0a0a0"
+# accent = "#E07A5F"
+# accent_hover = "#F4A594"
+# code_bg = "#1e1e1d"
+# border = "#2a2a29"
+
+# NOTE: Kanagawa Wave colours.
 [extra.colours.dark]
-background = "#141413"
-surface = "#242422"
-text = "#e8e8e8"
-text_muted = "#a0a0a0"
-accent = "#E07A5F"
-accent_hover = "#F4A594"
-code_bg = "#1e1e1d"
-border = "#2a2a29"
-
-# NOTE: Catppuccin Mocha Dark colours.
-# [extra.colours.dark]
-# background = "#1e1e2e" # base
-# text = "#cdd6f4" # text
-# text_muted = "#a6adc8" # subtext 0
-# accent = "#f9e2af" # yellow
-# accent_hover = "#f5e0dc" # rosewater
-# code_bg = "#1e1e1d"
-# border = "#313244" # surface0
-
-# Kanagawa Lotus Light colours
-# [extra.colours.light]
-# background = "#DCD7BA"
-# text = "#1a1a1a"
-# text_muted = "#3a3a3a"
-# accent = "#c34043"
-# accent_hover = "#7A3533"
-# code_bg = "#f0ebe3"
-# border = "#C8C093"
-
-# # NOTE: Kanagawa Wave Dark colours.
-# [extra.colours.dark]
-# background = "#1F1F28" # sumiInk 1
-# text = "#DCD7BA" # fujiWhite
-# text_muted = "#a6adc8" # subtext 0 (from catpuccin)
-# accent = "#e46876" # waveRed
-# accent_hover = "#c34043" # peach Red
-# code_bg = "#1e1e1d"
-# border = "#363646" # sumiInk 3
+background = "#1F1F28" # sumiInk1
+surface = "#2A2A37" # sumiInk 2
+text = "#DCD7BA" # fujiWhite
+text_muted = "#717C7C" # fujiGray
+accent = "#FFA066" # surimi orange
+accent_hover = "#FF9E3B" # ronin yellow
+code_bg = "#16161D" # sumiInk 0
+border = "#54546D" # sumiInk 4

@@ -16,6 +16,11 @@
     --border: light-dark(var(--light-border), var(--dark-border));
 }
 
+/* Nav bar parameters */
+$nav-count: var(--nav-count);
+$basis: var(--basis);
+
+/* Theme Colors */
 $bg-main: var(--bg-main);
 $bg-surface: var(--bg-surface);
 $accent: var(--accent);
@@ -26,5 +31,9 @@ $text-muted: var(--text-muted);
 $code-bg: var(--code-bg);
 $border: var(--border);
 
-$nav-count: var(--nav-count);
-$basis: var(--basis);
+/* Breaking points */
+$sm: 576px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+$xxl: 1536px;

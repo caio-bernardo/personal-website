@@ -1,4 +1,7 @@
-@use "base";
-@use "theme";
-@use "layout/links";
-@use "layout/comment";
+@use "variables";
+@use "partials/base";
+@use "partials/theme";
+
+@use "partials/layout/links";
+@use "partials/layout/comment";
+@use "partials/layout/profile_card";

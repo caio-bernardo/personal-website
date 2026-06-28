@@ -1,0 +1,32 @@
+/* Profile Card for about.md */
+@use "../../variables" as *;
+
+article.profile-card {
+    display: flex;
+    gap: 1rem;
+
+    address {
+        line-height: 1.8rem;
+        a:first-child {
+            text-decoration: none;
+        }
+    }
+
+    img {
+        width: 25vw;
+        max-width: 256px;
+        height: auto;
+    }
+}
+
+@media (max-width: $md) {
+    article.profile-card {
+        margin-bottom: 1rem;
+        flex-direction: column;
+        align-items: left;
+
+        img {
+            width: 100%;
+        }
+    }
+}

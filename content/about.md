@@ -3,20 +3,18 @@ title = "About"
 template = "page.html"
 +++
 
-<article style="display: flex; gap: 1em;">
+<article class="profile-card">
 {{ image(src="profile.jpg", path="/images/" alt="Caio Bernardo Photo") }}
 
 <address>
-    <a class="p-name" rel="me" href="https://caiobernardo.top">
-        Caio Vinicius C. Bernardo.</a><br />
+    <a class="p-name" rel="me" href="https://caiobernardo.top">Caio Vinicius C. Bernardo.</a><br />
     Information Systems at <span class="p-org">University of São Paulo</span>.<br />
     <a class="u-email" href="mailto:me@caiobernardo.top" >
         me@caiobernardo.top
-    </a>.<br />
+    </a><br />
     <a class="u-key" href="/pgp/caio-bernardo-pubkey.asc">PGP Public Key</a><br/>
     São Paulo, Brazil.<br />
 </address>
-
 </article>
 
 <!--More-->

@@ -1,4 +1,4 @@
-@use "variables" as *;
+@use "../variables" as *;
 
 [data-theme="light"] {
     color-scheme: light;
@@ -145,4 +145,9 @@ blockquote {
     &:hover {
         background-color: $border;
     }
+}
+
+mark {
+    background-color: $bg-surface;
+    color: $text;
 }

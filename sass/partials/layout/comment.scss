@@ -1,7 +1,7 @@
-@use "../variables" as *;
-@use "sass:color";
+/* Styles for the comment section  */
 
-@import "../theme/kanagawa";
+@use "../../variables" as *;
+@use "sass:color";
 
 section#comments {
     #comment-wrapper {

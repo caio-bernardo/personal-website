@@ -4,7 +4,7 @@
 
 <!-- INSERT BANNER HERE -->
 
-![Great Wave of Kanagawa](static/images/Tsunami_by_hokusai_19th_century.jpg)
+![Great Wave of Kanagawa](Tsunami_by_hokusai_19th_century.jpg)
 
 <!-- INSERT BADGES HERE -->
 
@@ -12,34 +12,11 @@
 
 This my personal website, built with Zola, containing information about me, useful links, my resume and some blog posts. Includes a Fediverse linked comment section!
 
-## Roadmap
-
-- [x] Landing Page
-- [x] Icon on the web
-- [x] About Page
-- [x] Links Page
-- [x] Blogs Section
-- [x] Templates to create Blog posts
-- [x] Dark/Light Mode
-- [x] Proper metadata and good SEO
-- [x] RSS/Atom feed
-- [x] Write the First Post
-- [x] Make image for link sharing
-- [x] Implement webmentions
-- [x] Fix font problems in mobile
-- [x] Mastodon Comments
-- [x] Portuguese version
-- [x] Traduzir todos os posts
-- [x] Recent Posts on Home
-- [ ] Botão que troca de lingua
-- [ ] Add search bar
-- [ ] Your Own Logo
-- [ ] Subscribe should redirect to a modal that sends emails updates
-
 ## Acknowledgements
 
 - [Gabriel Monteiro's Website](https://gabrielsouza.top/)
 - [Marcus Obst's Website](https://marcus-obst.de/)
+- [Austere theme](https://github.com/tomwrw/austere-theme-zola) by tomwrw
 - Built with [Zola](https://getzola.org)
 - Built with [Pico CSS](https://picocss.com)
 

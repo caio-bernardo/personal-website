@@ -1,0 +1,23 @@
+/* Styles for the link page */
+
+ul.links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li.link {
+    svg {
+        width: 2em;
+        height: 2em;
+        color: inherit;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+
+        text-decoration: none;
+    }
+}

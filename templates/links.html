@@ -1,17 +1,25 @@
-{% extends 'base.html' %} {% block main %}
-<hgroup>
-    <h1>{{page.title}}</h1>
-    <p>{{page.description}}</p>
-</hgroup>
-
-<div class="container">
-    {% for link in page.extra.links %}
-    <a href="{{link.url}}" rel="me" aria-label="{{ link.name | capitalize }}">
-        <article class="icon-card">
-            {{ icons::icon(name=link.name) }}
-            <p>{{link.name}}</p>
-        </article>
-    </a>
-    {% endfor %}
-</div>
-{% endblock main %}
+{% extends "base.html" %} {% block content %} {% if config.extra.profile_picture
+%}
+<img
+    src="{{ config.extra.profile_picture }}"
+    alt="Profile picture"
+    class="profile-pic"
+/>
+{% endif %} {{ page.content | safe }} {% set links_data =
+load_data(path="content/" ~ page.path ~ "links.toml", required=false) -%} {% if
+links_data and links_data.links -%}
+<ul class="links">
+    {% for link in links_data.links -%}
+    <li class="link">
+        <a href="{{ link.url }}">
+            {% if link.icon -%} {{ icons::icon(name=link.icon) }} {% endif %} {{
+            link.title }}
+        </a>
+    </li>
+    {% if not loop.last %}
+    <hr />
+    {% endif %} {% endfor -%}
+</ul>
+{% else -%}
+<p>No links found. Add a <code>links.toml</code> file to this section.</p>
+{% endif -%} {% endblock content %}

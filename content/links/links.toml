@@ -1,0 +1,38 @@
+# Link Collection
+# Each link will appear as a card in the page. Following fields are allowed.
+#   title   - Name of the link. i.e. LinkedIn (required)
+#   url     - Actual link (required)
+#   icon    - Icon to use in the card
+
+[[links]]
+title = "Email"
+url = "mailto:me@caiobernardo.top"
+icon = "email"
+
+[[links]]
+title = "Linkedin"
+url = "https://linkedin.com/in/bernardo-caio"
+icon = "linkedin"
+
+[[links]]
+title = "Github"
+url = "https://github.com/caio-bernardo"
+icon = "github"
+
+[[links]]
+title = "Lattes"
+url = "http://lattes.cnpq.br/9813791402561952"
+icon = "lattes"
+
+# [[links]]
+# title = "ORcID"
+# url = ""
+
+[[links]]
+title = "Mastodon"
+url = "https://mastodon.social/@caio_v1"
+icon = "mastodon"
+
+# [[links]]
+# title = "Instagram"
+# url = ""

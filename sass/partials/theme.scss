@@ -1,0 +1,153 @@
+@use "../variables" as *;
+
+[data-theme="light"] {
+    color-scheme: light;
+}
+
+[data-theme="dark"] {
+    color-scheme: dark;
+}
+
+html {
+    background: $bg-main;
+    color: $text;
+
+    a {
+        color: $accent;
+        text-decoration: underline;
+    }
+
+    a:visited {
+        color: $accent;
+    }
+    a:hover {
+        color: $accent-hover;
+    }
+
+    header > div > span > a {
+        text-decoration: none;
+    }
+    html header > div > span > a:hover {
+        text-decoration: underline;
+    }
+
+    p,
+    ul,
+    ol,
+    .desc {
+        color: $text-muted;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $text;
+    }
+    strong {
+        color: $text;
+    }
+    header strong {
+        color: $accent;
+    }
+
+    pre,
+    article > img,
+    article > p > img {
+        background: $code-bg;
+    }
+
+    code {
+        background: $code-bg;
+        color: $text;
+    }
+    hr {
+        border-color: $border;
+    }
+
+    .theme svg {
+        color: inherit;
+    }
+}
+
+/* Shared styles */
+a.active {
+    color: $accent;
+}
+a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+hr {
+    border: 0;
+    border-top: 1px solid;
+    clear: both;
+    margin: 1.5rem 0;
+}
+blockquote {
+    border-left: 3px solid $accent;
+    padding-left: 1.25rem;
+    font-style: italic;
+    background: $bg-surface;
+}
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    padding: 0.5rem 1rem;
+    background: $accent;
+    color: $accent-text;
+    z-index: 1000;
+}
+.skip-link:focus {
+    top: 0;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        $bg-main 0.2s ease,
+        transform 0.1s ease;
+    text-decoration: none;
+
+    &:active {
+        transform: scale(0.98);
+    }
+}
+
+.btn-primary {
+    background-color: $accent;
+    color: $accent-text;
+    border-color: $accent;
+
+    &:hover {
+        background-color: $accent-hover;
+    }
+}
+
+.btn-secondary {
+    background-color: $bg-surface;
+    color: $text;
+    border-color: $border;
+
+    &:hover {
+        background-color: $border;
+    }
+}
+
+mark {
+    background-color: $bg-surface;
+    color: $text;
+}

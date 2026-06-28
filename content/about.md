@@ -1,23 +1,23 @@
 +++
 title = "About"
+template = "page.html"
 +++
 
-<article class="grid h-card" id="photo-card">
-    {{ resize_img(path="/images/profile.jpg", width=236, height=236, op="fit",
-    alt="Caio Bernardo Photo", class="about-img u-photo") }}
+<article class="profile-card">
+{{ image(src="profile.jpg", path="/images/" alt="Caio Bernardo Photo") }}
 
 <address>
-    <a class="p-name" rel="me" href="https://caiobernardo.top">
-        Caio Vinicius C. Bernardo.</a><br />
+    <a class="p-name" rel="me" href="https://caiobernardo.top">Caio Vinicius C. Bernardo.</a><br />
     Information Systems at <span class="p-org">University of São Paulo</span>.<br />
     <a class="u-email" href="mailto:me@caiobernardo.top" >
         me@caiobernardo.top
-    </a>.<br />
+    </a><br />
     <a class="u-key" href="/pgp/caio-bernardo-pubkey.asc">PGP Public Key</a><br/>
     São Paulo, Brazil.<br />
 </address>
-
 </article>
+
+<!--More-->
 
 Below, you can find my resume in both Portuguese and English, both signed and verified.
 
@@ -35,6 +35,6 @@ This website was created for many reasons:
 3. I love writing and thought a blog would motivate me to write more often.
 4. I saw lot of content about the [IndieWeb](https://indieweb.org/) and decided to participate.
 
-Therefore, I made this website &mdash; taking inspiration from many sources (more details in [here](/blog/first-post)) &mdash; where we have a humble [blog](/blog) for posts, an enumeration of my [projects](/projects) and a page with [links](/links) for my main social medias.
+Therefore, I made this website &mdash; taking inspiration from many sources (more details in [here](@/posts/2026-02-19-hello/index.md)) &mdash; where we have a humble [blog](@/posts/_index.md) for posts, an enumeration of my [projects](@/projects/_index.md) and a page with [links](@/links/index.md) for my main social medias.
 
 That said, I promise to try my best to keep this site on the running and updated.
